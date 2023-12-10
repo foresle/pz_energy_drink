@@ -8,8 +8,8 @@ module EnergyDrinks {
 		Type = Food,
 		DisplayName = Energy Drink,
 		Icon = AnEnergyDrink,
-		Weight = 0.25,
-		DisplayCategory = Energy Drink,
+		Weight = 0.3,
+		DisplayCategory = EnergyDrink,
 		CustomContextMenu = Drink,
 		CustomEatSound = DrinkingFromCan,
 		IsCookable = false,
@@ -32,7 +32,7 @@ module EnergyDrinks {
 		DisplayName = OPSP Energy Drink,
 		Icon = OPSPEnergyDrink,
 		Weight = 0.5,
-		DisplayCategory = Energy Drink,
+		DisplayCategory = EnergyDrink,
 		CustomContextMenu = Drink,
 		CustomEatSound = DrinkingFromCan,
 		IsCookable = false,
@@ -55,13 +55,13 @@ module Base {
 	{
 		mesh = Can,
 		texture = AnEnergyDrinkCan,
-		scale = 0.02,
+		scale = 0.025,
 	}
 	
 	model OPSPEnergyDrinkCan
 	{
 		mesh = Can,
 		texture = OPSPEnergyDrinkCan,
-		scale = 0.025,
+		scale = 0.03,
 	}
 }
