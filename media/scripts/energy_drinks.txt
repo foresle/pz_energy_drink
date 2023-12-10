@@ -1,0 +1,67 @@
+module EnergyDrinks {
+	imports {
+		Base
+	}
+
+	item AnEnergyDrink
+	{
+		Type = Food,
+		DisplayName = Energy Drink,
+		Icon = AnEnergyDrink,
+		Weight = 0.25,
+		DisplayCategory = Energy Drink,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		IsCookable = false,
+		
+		HungerChange = 5,
+		BoredomChange = -5,
+		FatigueChange = -20,
+		StressChange = 5,
+		UnhappyChange = -10,
+		EnduranceChange = 2,
+		ThirstChange = -10,
+
+		StaticModel = AnEnergyDrinkCan,
+		WorldStaticModel = AnEnergyDrinkCan,
+	}
+
+	item OPSPEnergyDrink
+	{
+		Type = Food,
+		DisplayName = OPSP Energy Drink,
+		Icon = OPSPEnergyDrink,
+		Weight = 0.5,
+		DisplayCategory = Energy Drink,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		IsCookable = false,
+		
+		HungerChange = 5,
+		BoredomChange = -10,
+		FatigueChange = -40,
+		StressChange = 10,
+		UnhappyChange = -20,
+		EnduranceChange = 10,
+		ThirstChange = -15,
+		
+		StaticModel = OPSPEnergyDrinkCan,
+		WorldStaticModel = OPSPEnergyDrinkCan,
+	}
+}
+
+module Base {
+	model AnEnergyDrinkCan
+	{
+		mesh = Can,
+		texture = AnEnergyDrinkCan,
+		scale = 0.02,
+	}
+	
+	model OPSPEnergyDrinkCan
+	{
+		mesh = Can,
+		texture = OPSPEnergyDrinkCan,
+		scale = 0.025,
+	}
+}
