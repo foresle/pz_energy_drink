@@ -2,4 +2,9 @@
 
 ## The mod for Project Zomboid game.
 
-This mod adds the multiple energy drinks to the game.
+This mod adds the two energy drinks to the game.
+
+### The future tasks:
+
+- [ ] Change the icons
+- [ ] Fix problem with drinking animation
