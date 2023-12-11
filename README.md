@@ -7,4 +7,4 @@ This mod adds the two energy drinks to the game.
 ### The future tasks:
 
 - [ ] Change the icons
-- [ ] Fix problem with drinking animation
+- [X] Fix problem with drinking animation

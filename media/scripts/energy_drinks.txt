@@ -22,7 +22,7 @@ module EnergyDrinks {
 		EnduranceChange = 2,
 		ThirstChange = -10,
 
-		StaticModel = AnEnergyDrinkCan,
+		StaticModel = AnEnergyDrinkCanReversed,
 		WorldStaticModel = AnEnergyDrinkCan,
 	}
 
@@ -45,7 +45,7 @@ module EnergyDrinks {
 		EnduranceChange = 10,
 		ThirstChange = -15,
 		
-		StaticModel = OPSPEnergyDrinkCan,
+		StaticModel = OPSPEnergyDrinkCanReversed,
 		WorldStaticModel = OPSPEnergyDrinkCan,
 	}
 }
@@ -57,10 +57,24 @@ module Base {
 		texture = AnEnergyDrinkCan,
 		scale = 0.025,
 	}
-	
+
 	model OPSPEnergyDrinkCan
 	{
 		mesh = Can,
+		texture = OPSPEnergyDrinkCan,
+		scale = 0.03,
+	}
+
+	model AnEnergyDrinkCanReversed
+	{
+		mesh = CanReversed,
+		texture = AnEnergyDrinkCan,
+		scale = 0.025,
+	}
+
+	model OPSPEnergyDrinkCanReversed
+	{
+		mesh = CanReversed,
 		texture = OPSPEnergyDrinkCan,
 		scale = 0.03,
 	}
